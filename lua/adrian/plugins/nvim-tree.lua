@@ -1,6 +1,6 @@
 local setup, nvimtree = pcall(require, "nvim-tree")
 if not setup then
-  return
+	return
 end
 
 vim.g.loaded = 1
@@ -15,16 +15,40 @@ nvimtree.setup({
 	renderer = {
 		icons = {
 			glyphs = {
+				default = "",
+				symlink = "",
 				folder = {
-					arrow_closed = "", -- arrow when folder is closed
-					arrow_open = "", -- arrow when folder is open
+					arrow_closed = "", -- arrow when folder is closed
+					arrow_open = "",
+					default = "",
+					open = "",
+					empty = "",
+					empty_open = "",
+					symlink = "",
+					symlink_open = "",
 				},
+			},
+			git = {
+				unstaged = "",
+				staged = "S",
+				unmerged = "",
+				renamed = "➜",
+				untracked = "U",
+				deleted = "",
+				ignored = "◌",
 			},
 		},
 	},
-	-- disable window_picker for
-	-- explorer to work well with
-	-- window splits
+	diagnostics = {
+		enable = true,
+		show_on_dirs = true,
+		icons = {
+			hint = "",
+			info = "",
+			warning = "",
+			error = "",
+		},
+	},
 	actions = {
 		open_file = {
 			window_picker = {
