@@ -29,7 +29,7 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim")
 	use("nvim-tree/nvim-tree.lua")
-
+	use("lukas-reineke/indent-blankline.nvim")
 	-- colorschemes
 	use("Mofiqul/dracula.nvim")
 

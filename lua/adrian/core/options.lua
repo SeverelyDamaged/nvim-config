@@ -9,6 +9,7 @@ opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
+vim.opt.smartindent = true
 
 -- line wrapping
 opt.wrap = false
@@ -36,3 +37,4 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.iskeyword:append("-")
+vim.opt.showtabline = 0

@@ -72,12 +72,6 @@ lspconfig["tsserver"].setup({
 	on_attach = on_attach,
 })
 -- configure typescript server with plugin
-typescript.setup({
-	server = {
-		capabilities = capabilities,
-		on_attach = on_attach,
-	},
-})
 
 -- configure css server
 lspconfig["cssls"].setup({
@@ -89,6 +83,13 @@ lspconfig["cssls"].setup({
 lspconfig["tailwindcss"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
+})
+
+typescript.setup({
+	server = {
+		capabilites = capabilities,
+		on_attach = on_attach,
+	},
 })
 
 -- configure lua server (with special settings)
