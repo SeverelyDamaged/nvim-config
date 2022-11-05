@@ -11,15 +11,19 @@ vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
 
 -- configure nvim-tree
 nvimtree.setup({
-	-- change folder arrow icons
+	update_focused_file = {
+		enable = true,
+		update_cwd = true,
+	},
 	renderer = {
+		root_folder_modifier = ":t",
 		icons = {
 			glyphs = {
 				default = "",
 				symlink = "",
 				folder = {
-					arrow_closed = "", -- arrow when folder is closed
 					arrow_open = "",
+					arrow_closed = "",
 					default = "",
 					open = "",
 					empty = "",
@@ -27,15 +31,15 @@ nvimtree.setup({
 					symlink = "",
 					symlink_open = "",
 				},
-			},
-			git = {
-				unstaged = "",
-				staged = "S",
-				unmerged = "",
-				renamed = "➜",
-				untracked = "U",
-				deleted = "",
-				ignored = "◌",
+				git = {
+					unstaged = "",
+					staged = "S",
+					unmerged = "",
+					renamed = "➜",
+					untracked = "U",
+					deleted = "",
+					ignored = "◌",
+				},
 			},
 		},
 	},
