@@ -56,6 +56,27 @@ for type, icon in pairs(signs) do
 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
+-- Config for LSP
+local config = {
+	virtual_text = false,
+	signs = {
+		active = signs,
+	},
+	update_in_insert = true,
+	underline = true,
+	severity_sort = true,
+	float = {
+		focusable = true,
+		style = "minimal",
+		border = "rounded",
+		source = "always",
+		header = "",
+		prefix = "",
+	},
+}
+
+vim.diagnostic.config(config)
+
 -- configure html server
 lspconfig["html"].setup({
 	capabilities = capabilities,
