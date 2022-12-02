@@ -92,9 +92,14 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
+	-- bufferline
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "kyazdani42/nvim-web-devicons" })
 
+	-- greeter
 	use("goolord/alpha-nvim")
+
+	-- css colours
+	use("norcalli/nvim-colorizer.lua")
 
 	if packer_bootstrap then
 		require("packer").sync()
