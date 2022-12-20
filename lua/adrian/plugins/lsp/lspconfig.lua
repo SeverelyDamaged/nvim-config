@@ -101,6 +101,11 @@ lspconfig["cssls"].setup({
 })
 
 -- configure tailwindcss server
+lspconfig["pylsp"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 lspconfig["tailwindcss"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
