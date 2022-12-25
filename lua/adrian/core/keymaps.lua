@@ -47,3 +47,14 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 -- comments
 keymap.set("n", "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>")
 keymap.set("x", "<leader>/", '<ESC><CMD>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<CR>')
+
+-- DAP
+keymap.set("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<cr>")
+keymap.set("n", "<leader>dc", "<cmd>lua require'dap'.continue()<cr>")
+keymap.set("n", "<leader>di", "<cmd>lua require'dap'.step_into()<cr>")
+keymap.set("n", "<leader>do", "<cmd>lua require'dap'.step_over()<cr>")
+keymap.set("n", "<leader>dO", "<cmd>lua require'dap'.step_out()<cr>")
+keymap.set("n", "<leader>dr", "<cmd>lua require'dap'.repl.toggle()<cr>")
+keymap.set("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>")
+keymap.set("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>")
+keymap.set("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>")

@@ -30,9 +30,11 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim")
 	use("nvim-tree/nvim-tree.lua")
 	use("lukas-reineke/indent-blankline.nvim")
+
 	-- colorschemes
 	use("Mofiqul/dracula.nvim")
 	use("rebelot/kanagawa.nvim")
+
 	-- tmux & split window navigation
 	use("christoomey/vim-tmux-navigator")
 	use("szw/vim-maximizer")
@@ -99,6 +101,10 @@ return packer.startup(function(use)
 
 	-- css colours
 	use("norcalli/nvim-colorizer.lua")
+
+	-- DAP
+	use("mfussenegger/nvim-dap")
+	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
 
 	if packer_bootstrap then
 		require("packer").sync()
