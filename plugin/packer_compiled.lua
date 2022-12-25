@@ -154,6 +154,11 @@ _G.packer_plugins = {
     path = "/Users/adrian/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["luasnip-latex-snippets.nvim"] = {
+    loaded = true,
+    path = "/Users/adrian/.local/share/nvim/site/pack/packer/start/luasnip-latex-snippets.nvim",
+    url = "https://github.com/iurimateus/luasnip-latex-snippets.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/Users/adrian/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -270,6 +275,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/adrian/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  vimtex = {
+    loaded = true,
+    path = "/Users/adrian/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
   }
 }
 

@@ -11,6 +11,7 @@ local servers = {
 	"clangd",
 	"tailwindcss",
 	"pylsp",
+	"texlab",
 }
 
 local settings = {
