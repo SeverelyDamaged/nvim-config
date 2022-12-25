@@ -108,7 +108,6 @@ return packer.startup(function(use)
 
 	-- LaTex
 	use("lervag/vimtex")
-	use({ "iurimateus/luasnip-latex-snippets.nvim", requires = { "lervag/vimtex", "L3MON4D3/LuaSnip" } })
 
 	if packer_bootstrap then
 		require("packer").sync()
