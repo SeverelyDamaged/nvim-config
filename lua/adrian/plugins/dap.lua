@@ -16,19 +16,34 @@ end
 dap_install.setup({})
 print(vim.fn.stdpath("data"))
 dap_install.config("python", {})
-
-dap_install.config("codelldb", {
-	adapters = {
-		type = "server",
-		port = "${port}",
-		executable = {
-			command = "/usr/bin/codelldb",
-			args = { "--port", "${port}" },
-		},
-	},
-})
 -- add other configs here
+-- print(vim.fn.stdpath("data") .. "/mason/packages/codelldb/extension/adapter/codelldb")
+dap.adapters.codelldb = {
+	type = "server",
+	port = "${port}",
+	executable = {
+		-- provide the absolute path for `codelldb` command if not using the one installed using `mason.nvim`
+		command = vim.fn.stdpath("data") .. "/mason/packages/codelldb/extension/adapter/codelldb",
+		args = { "--port", "${port}" },
 
+		-- On windows you may have to uncomment this:
+		-- detached = false,
+	},
+}
+dap.configurations.cpp = {
+	{
+		name = "Launch file",
+		type = "codelldb",
+		request = "launch",
+		program = function()
+			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+		end,
+		cwd = "${workspaceFolder}",
+		stopOnEntry = false,
+	},
+}
+dap.configurations.c = dap.configurations.cpp
+dap.configurations.rust = dap.configurations.cpp
 dapui.setup({
 	expand_lines = true,
 	icons = { expanded = "", collapsed = "", circular = "" },
