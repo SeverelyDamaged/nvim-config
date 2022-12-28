@@ -16,6 +16,7 @@ end
 dap_install.setup({})
 print(vim.fn.stdpath("data"))
 dap_install.config("python", {})
+
 dap_install.config("codelldb", {
 	adapters = {
 		type = "server",
@@ -23,18 +24,6 @@ dap_install.config("codelldb", {
 		executable = {
 			command = "/usr/bin/codelldb",
 			args = { "--port", "${port}" },
-		},
-		configurations = {
-			{
-				name = "Launch file",
-				type = "codelldb",
-				request = "launch",
-				program = function()
-					return vim.fn.input("/usr/bin/codelldb", vim.fn.getcwd() .. "/", "file")
-				end,
-				cwd = "${workspaceFolder}",
-				stopOnEntry = false,
-			},
 		},
 	},
 })
