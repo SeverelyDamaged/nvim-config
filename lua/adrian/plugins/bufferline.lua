@@ -3,6 +3,11 @@ if not status then
 	return
 end
 
+local highlights = require("nord").bufferline.highlights({
+	italic = true,
+	bold = true,
+})
+
 bufferline.setup({
 	options = {
 		close_command = "bdelete! %d", -- can be a string | function, see "Mouse actions"
@@ -16,5 +21,6 @@ bufferline.setup({
 				padding = 1,
 			},
 		},
+		highlights = highlights,
 	},
 })

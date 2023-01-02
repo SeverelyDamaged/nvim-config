@@ -32,8 +32,8 @@ return packer.startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim")
 
 	-- colorschemes
-	use("Mofiqul/dracula.nvim")
 	use("rebelot/kanagawa.nvim")
+	use("shaunsingh/nord.nvim")
 
 	-- tmux & split window navigation
 	use("christoomey/vim-tmux-navigator")
