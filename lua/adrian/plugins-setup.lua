@@ -73,6 +73,7 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
+	-- Discord
 	use("andweeb/presence.nvim")
 
 	-- formatting & linting
@@ -107,6 +108,7 @@ return packer.startup(function(use)
 	use("mfussenegger/nvim-dap")
 	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
 	use("ravenxrz/DAPInstall.nvim")
+
 	-- LaTex
 	use("lervag/vimtex")
 
