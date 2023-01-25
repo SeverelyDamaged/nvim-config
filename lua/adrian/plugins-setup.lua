@@ -34,6 +34,7 @@ return packer.startup(function(use)
 	-- colorschemes
 	use("rebelot/kanagawa.nvim")
 	use("shaunsingh/nord.nvim")
+	use("folke/tokyonight.nvim")
 
 	-- tmux & split window navigation
 	use("christoomey/vim-tmux-navigator")

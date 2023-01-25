@@ -38,3 +38,6 @@ opt.splitbelow = true
 
 opt.iskeyword:append("-")
 vim.opt.showtabline = 0
+
+-- Hiding tilde
+vim.opt.fillchars:append({ eob = " " })
