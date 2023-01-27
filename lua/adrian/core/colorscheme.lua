@@ -3,15 +3,17 @@ if not status then
 	return
 end
 
-tokyonight.setup({
-	transparent = true,
-	styles = {
-		sidebars = "transparent",
-		floats = "transparent",
-	},
-})
+if vim.loop.os_uname().sysname ~= "Darwin" then
+	tokyonight.setup({
+		transparent = true,
+		styles = {
+			sidebars = "transparent",
+			floats = "transparent",
+		},
+	})
+end
 
-local status, _ = pcall(vim.cmd, "colorscheme tokyonight")
+local status, _ = pcall(vim.cmd, "colorscheme tokyonight-night")
 if not status then
 	print("Colorscheme not found!")
 	return
