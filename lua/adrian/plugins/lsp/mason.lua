@@ -12,7 +12,7 @@ local servers = {
 	"tailwindcss",
 	"pylsp",
 	"texlab",
-	"emmet-ls",
+	"emmet_ls",
 }
 
 local settings = {
