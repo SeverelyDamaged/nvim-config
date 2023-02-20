@@ -258,7 +258,7 @@ _G.packer_plugins = {
   },
   ["tokyonight.nvim"] = {
     loaded = true,
-    path = "/home/adrian/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    path = "/Users/adrian/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
   ["typescript.nvim"] = {
