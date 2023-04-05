@@ -13,7 +13,7 @@ local servers = {
 	"pylsp",
 	"texlab",
 	"emmet_ls",
-	"sqls",
+	"sqlls",
 }
 
 local settings = {
