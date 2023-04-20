@@ -30,6 +30,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim")
 	use("nvim-tree/nvim-tree.lua")
 	use("lukas-reineke/indent-blankline.nvim")
+	use("ThePrimeagen/harpoon")
 
 	-- colorschemes
 	use("rebelot/kanagawa.nvim")
