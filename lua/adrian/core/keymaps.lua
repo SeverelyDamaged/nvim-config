@@ -23,8 +23,8 @@ keymap.set("n", "<C-k>", "<C-w>k")
 keymap.set("n", "<C-l>", "<C-w>l")
 
 -- bufferline
-keymap.set("n", "<S-l>", ":bnext<CR>")
-keymap.set("n", "<S-h>", ":bprevious<CR>")
+-- keymap.set("n", "<S-l>", ":bnext<CR>")
+-- keymap.set("n", "<S-h>", ":bprevious<CR>")
 keymap.set("n", "<S-q>", ":bdelete!<CR>")
 
 -- vim-maximizer
