@@ -14,6 +14,7 @@ local servers = {
 	"texlab",
 	"emmet_ls",
 	"sqlls",
+	"prisma-language-server",
 }
 
 local settings = {
