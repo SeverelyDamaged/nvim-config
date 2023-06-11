@@ -58,3 +58,9 @@ cmp.setup({
 		ghost_text = true,
 	},
 })
+
+luasnip.setup({
+	enable_autosnippets = true,
+	store_selection_keys = "<Tab>",
+	history = true,
+})
