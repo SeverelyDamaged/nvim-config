@@ -10,7 +10,6 @@ local servers = {
 	"rust_analyzer",
 	"clangd",
 	"tailwindcss",
-	"pylsp",
 	"texlab",
 	"emmet_ls",
 	"sqlls",

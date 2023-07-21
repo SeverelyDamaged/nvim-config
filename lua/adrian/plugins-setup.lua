@@ -33,8 +33,6 @@ return packer.startup(function(use)
 	use("ThePrimeagen/harpoon")
 
 	-- colorschemes
-	use("rebelot/kanagawa.nvim")
-	use("shaunsingh/nord.nvim")
 	use("folke/tokyonight.nvim")
 
 	-- tmux & split window navigation
