@@ -20,6 +20,12 @@ null_ls.setup({
 		formatting.prettier.with({ extra_args = { "--print-width 90" } }), -- js/ts formatter
 		formatting.eslint_d,
 		formatting.ruff,
+		diagnostics.mypy.with({
+			extra_args = function()
+				local virtual = os.getenv("VIRTUAL_ENV") or os.getenv("CONDA_DEFAULT_ENV") or "/usr"
+				return { "--python-executable", virtual .. "/bin/python3" }
+			end,
+		}),
 		diagnostics.ruff,
 		formatting.stylua, -- lua formatter
 		diagnostics.eslint.with({ -- js/ts linter
