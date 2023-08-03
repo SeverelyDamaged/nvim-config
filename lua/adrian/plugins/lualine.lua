@@ -53,7 +53,7 @@ lualine.setup({
 		lualine_a = { "mode" },
 		lualine_b = { "branch" },
 		lualine_c = { diagnostics, "filename" },
-		lualine_x = { diff, spaces, "encoding", filetype },
+		lualine_x = { spaces, "encoding", filetype },
 		lualine_y = { location },
 		lualine_z = { "progress" },
 	},
