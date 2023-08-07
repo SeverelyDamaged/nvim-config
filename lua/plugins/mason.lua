@@ -6,6 +6,7 @@ return {
         "bash-language-server",
         "prisma-language-server",
         "ruff",
+        "shfmt"
       },
     },
   },

@@ -1,12 +1,10 @@
 return {
   "jose-elias-alvarez/null-ls.nvim",
-  opts = function()
+  opts = function(_, opts)
     local nls = require("null-ls")
-    return {
-      root_dir = require("null-ls.utils").root_pattern(".null-ls-root", ".neoconf.json", "Makefile", ".git"),
-      sources = {
-        nls.builtins.formatting.ruff,
-      },
-    }
+    opts.sources = opts.sources or {}
+    vim.list_extend(opts.sources, {
+      nls.builtins.formatting.ruff,
+    })
   end,
 }
