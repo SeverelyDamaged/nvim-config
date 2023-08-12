@@ -7,3 +7,9 @@ vim.api.nvim_create_autocmd("ExitPre", {
   command = "set guicursor=a:ver90",
   desc = "Set cursor back to beam when leaving Neovim.",
 })
+
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+  group = vim.api.nvim_create_augroup("filetype", { clear = true }),
+  pattern = { "*.c", "*.py", "*.sh" },
+  command = "setlocal tabstop=4 shiftwidth=4",
+})
