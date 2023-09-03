@@ -8,6 +8,7 @@ return {
         "ruff",
         "shfmt",
         "html-lsp",
+        "css-lsp",
       })
     end,
   },
