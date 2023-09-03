@@ -7,6 +7,7 @@ return {
         "prisma-language-server",
         "ruff",
         "shfmt",
+        "html-lsp",
       })
     end,
   },
