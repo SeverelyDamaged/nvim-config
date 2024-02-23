@@ -8,7 +8,7 @@ return {
     opts = {
       adapters = {
         ["neotest-jest"] = {
-          jestCommand = "yarn test --",
+          jestCommand = "pnpm test --",
           jestConfigFile = function()
             local file = vim.fn.expand("%:p")
             if string.find(file, "/packages/") then
