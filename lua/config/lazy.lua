@@ -13,8 +13,6 @@ require("lazy").setup({
     -- import any extras modules here
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.json" },
-    -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
-    -- import/override with your plugins
     { import = "lazyvim.plugins.extras.dap.core" },
     { import = "lazyvim.plugins.extras.lang.clangd" },
     { import = "lazyvim.plugins.extras.lang.docker" },
@@ -27,9 +25,9 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.tex" },
     { import = "lazyvim.plugins.extras.vscode" },
     { import = "lazyvim.plugins.extras.lang.tex" },
-    -- { import = "lazyvim.plugins.extras.lang.go" },
-    -- { import = "lazyvim.plugins.extras.lang.java" },
-    -- { import = "lazyvim.plugins.extras.lsp.none-ls" },
+    { import = "lazyvim.plugins.extras.coding.copilot" },
+    { import = "lazyvim.plugins.extras.lang.go" },
+    -- import/override with your plugins
     { import = "plugins" },
   },
   defaults = {
