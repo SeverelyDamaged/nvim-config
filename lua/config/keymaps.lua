@@ -4,3 +4,7 @@
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- Disable these buffer keybinds to use [b and ]b
+vim.keymap.del("n", "<S-l>", {})
+vim.keymap.del("n", "<S-h>", {})
