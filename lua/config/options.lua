@@ -4,7 +4,4 @@
 
 vim.opt.spell = true
 vim.opt.scrolloff = 8
-
-if vim.env.VSCODE then
-  vim.g.vscode = true
-end
+vim.opt.colorcolumn = "80"
