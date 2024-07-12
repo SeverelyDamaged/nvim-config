@@ -10,6 +10,6 @@ vim.api.nvim_create_autocmd("ExitPre", {
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
   group = vim.api.nvim_create_augroup("filetype", { clear = true }),
-  pattern = { "*.c", "*.py", "*.sh", "*.go", "*.java", "*.cpp" },
+  pattern = { "*.c", "*.py", "*.sh", "*.go", "*.java", "*.cpp", "*.rs" },
   command = "setlocal tabstop=4 shiftwidth=4",
 })
