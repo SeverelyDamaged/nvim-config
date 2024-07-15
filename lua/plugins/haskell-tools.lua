@@ -7,22 +7,22 @@ return {
       local opts = { noremap = true, silent = true, buffer = bufnr }
       local icon, _, _ = require("mini.icons").get("extension", "hs")
       require("which-key").add({
-        "<leader>h",
+        "<leader>r",
         group = "haskell",
         icon = icon,
       })
 
       return {
-        { "<leader>hr", ht.repl.toggle, desc = "Toggle repl", opts },
+        { "<leader>rr", ht.repl.toggle, desc = "Toggle repl", opts },
         {
-          "<leader>hf",
+          "<leader>rf",
           function()
             ht.repl.toggle(vim.api.nvim_buf_get_name(0))
           end,
           desc = "Toggle buffer repl",
           opts,
         },
-        { "<leader>hq", ht.repl.quit, desc = "Quit repl", opts },
+        { "<leader>rq", ht.repl.quit, desc = "Quit repl", opts },
       }
     end,
   },
