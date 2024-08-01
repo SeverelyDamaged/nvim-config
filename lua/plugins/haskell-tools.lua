@@ -1,9 +1,7 @@
-local valid_filetypes = { "haskell", "lhaskell", "cabal", "cabalproject" }
-
 return {
   {
     "mrcjkb/haskell-tools.nvim",
-    ft = valid_filetypes,
+    ft = { "haskell", "lhaskell", "cabal", "cabalproject" },
     opts = function(_, opts)
       local ht = require("haskell-tools")
       local bufnr = vim.api.nvim_get_current_buf()
